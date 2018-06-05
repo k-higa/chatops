@@ -63,7 +63,7 @@ public class SlackBot extends Bot {
 
 
     private ResponseEntity<String> executeJenkinsJob(URI uri) {
-        String plainCreds = "jenkins_id" + ":" + "jenjkins_password";
+        String plainCreds = "jenkins_id" + ":" + "jenkins_password";
         byte[] plainCredsBytes = plainCreds.getBytes();
         byte[] base64CredsBytes = Base64.encodeBase64(plainCredsBytes);
         String base64Creds = new String(base64CredsBytes);
